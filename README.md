@@ -17,6 +17,7 @@ Releases are signed with [5C6DA024DDE27178073EA103F4B432D5D67990E3](https://keys
 Install dependencies:
 
 - wayland
+- [inih](https://github.com/benhoyt/inih)
 - wayland-protocols \*
 - meson \*
 - [scdoc](https://git.sr.ht/~sircmpwn/scdoc) (optional: man page) \*
@@ -68,7 +69,7 @@ echo 43 > /tmp/wobpipe
 
 Adapt this use-case to your workflow (scripts, callbacks, or keybindings handled by the window manager).
 
-See [man page](https://github.com/francma/wob/blob/master/wob.1.scd) for styling and positioning options.
+See [wob.1](https://github.com/francma/wob/blob/master/wob.1.scd) and [wob.ini.5](https://github.com/francma/wob/blob/master/wob.ini.5.scd) for styling and positioning options.
 
 ### Sway WM example
 
