@@ -1,10 +1,10 @@
 version = 0.12
 pkgs = libseccomp wlroots
 
-CFLAGS = -std=c99 -I./include $(pkg-confg --cflags $(pkgs))
+CFLAGS = -std=c99 -I./include $(shell pkg-config --cflags $(pkgs))
 CPPFLAGS = -DWOB_VERSION='"$(version)"'
-LDFLAGS = $(pkg-config --libs-only-L $(pkgs))
-LDLIBS = $(pkg-config --libs-only-l $(pkgs))
+LDFLAGS = $(shell pkg-config --libs-only-L $(pkgs))
+LDLIBS = $(shell pkg-config --libs-only-l $(pkgs))
 
 .PHONY: all clean
 
